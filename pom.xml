@@ -17,13 +17,14 @@
 				folder. -->
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 			<id>openshift</id>
+			<activation><activeByDefault>true</activeByDefault></activation>
 			<build>
 				<plugins>
 					<plugin>
 						<artifactId>maven-war-plugin</artifactId>
-						<version>2.4</version>
+						<version>3.0.0</version>
 						<configuration>
-							<webxml>src\main\webapp\WEB-INF\web.xml</webxml>
+							<failOnMissingWebXml>false</failOnMissingWebXml>
 							<outputDirectory>deployments</outputDirectory>
 							<warName>ROOT</warName>
 						</configuration>
