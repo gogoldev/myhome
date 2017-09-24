@@ -11,6 +11,7 @@
 		<profile>
   <!-- When built in OpenShift the 'openshift' profile will be used when invoking 
 				mvn. -->
+				
 			<!-- Use this profile for any OpenShift specific customization your app 
 				will need. -->
 			<!-- By default that is to put the resulting archive into the 'deployments' 
