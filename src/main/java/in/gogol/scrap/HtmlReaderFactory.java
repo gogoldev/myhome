@@ -26,6 +26,8 @@ public class HtmlReaderFactory {
 	private static void init() {
 		if (CLASS_INVENTORY.isEmpty()) {
 			CLASS_INVENTORY.put("basic", HtmlReaderImpl.class);
+			CLASS_INVENTORY.put("webdriver", HtmlReaderImpl_WebDriver.class);
+			CLASS_INVENTORY.put("htmlunit", HtmlReaderImpl_HtmlUnit.class);
 		}
 	}
 }
